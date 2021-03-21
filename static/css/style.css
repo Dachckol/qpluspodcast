@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background: #ed7cca;
+  font-family: 'Alata';
+  color: black;
+}
+
+a {
+  color: #551a8b;
+}
+
+
+h1, h2 {
+  font-family: 'Bowlby One SC';
+}
+h2 {
+  font-size: 15px;
+}
+h1 {
+  font-size: 25px;
+  margin: 0;
+}
+p {
+  margin: 5px;
+}
+
+
+.section {
+  padding-bottom: 20%;
+  padding-top: 20%;
+  overflow: auto;
+}
+
+
+
+#home h1 {
+  text-shadow: 1px 1px #ec4d57;
+}
+#about h1 {
+  text-shadow: 1px 1px #f5ac53;
+}
+#episodes h1 {
+  text-shadow: 1px 1px #6b9cd3;
+}
+#contact h1 {
+  text-shadow: 1px 1px #63cd3f;
+}
+
+
+@media screen and (min-width: 600px) {
+  article {
+    margin-top: 265px;
+  }
+}
+@media screen and (max-width: 600px) {
+  article {
+    margin-top: 365px;
+  }
+}

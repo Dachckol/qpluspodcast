@@ -1,0 +1,70 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+header a {
+  margin-right: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+
+header a:nth-child(1) {
+  margin-left: 10px;
+  text-shadow: 1px 1px #ec4d57;
+}
+header a:nth-child(1):hover {
+  background-color: #ec4d57;
+  text-shadow: 2px 2px black;
+}
+
+
+header a:nth-child(2) {
+  text-shadow: 1px 1px #f5ac53;
+}
+header a:nth-child(2):hover {
+  background-color: #f5ac53;
+  text-shadow: 2px 2px black;
+}
+
+
+header a:nth-child(3) {
+  text-shadow: 1px 1px #6b9cd3;
+}
+header a:nth-child(3):hover {
+  background-color: #6b9cd3;
+  text-shadow: 2px 2px black;
+}
+
+
+header a:nth-child(4) {
+  text-shadow: 1px 1px #63cd3f;
+}
+header a:nth-child(4):hover {
+  background-color: #63cd3f;
+  text-shadow: 2px 2px black;
+}
+
+
+header a:active {
+  text-shadow: none !important;
+}
+
+
+header a {
+  font-family: 'Bowlby One SC';
+  font-size: 22px;
+}
+

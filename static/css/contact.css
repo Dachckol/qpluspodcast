@@ -1,0 +1,52 @@
+#contact {
+  color: white;
+}
+#contact div {
+  display: inline-block;
+}
+#email_column, #social_column {
+  float: left;
+}
+
+.social_button {
+  font-size: 75px;
+  margin-right: 20px;
+}
+.social_button a {
+}
+
+#facebook a:hover{
+  color: #7a97d6;
+}
+
+
+#twitter a:hover{
+  color: #5ddfff;
+}
+
+
+#instagram a:hover{
+  color: #a144bf;
+}
+
+
+@media screen and (min-width: 600px) {
+  #contact {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #email_column {
+    width: 50%;
+  }
+  #social_column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact {
+    flex-direction: column;
+  }
+  #email_column, #social_column {
+    width: 100%;
+  }
+}

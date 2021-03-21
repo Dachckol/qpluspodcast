@@ -1,0 +1,38 @@
+#about div {
+  display: inline-block;
+}
+#big_logo {
+  float: left;
+}
+#big_logo img {
+  width: 100%;
+  border-radius: 20px;
+}
+#about_text #title {
+  text-align: center;
+  font-size: 40px;
+}
+#about_text h1, #about_text p {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  #about {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #big_logo {
+    width: 40%;
+  }
+  #about_text {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #about {
+    flex-direction: column;
+  }
+  #big_logo, #about_text {
+    width: 100%;
+  }
+}
