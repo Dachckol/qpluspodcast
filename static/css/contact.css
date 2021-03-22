@@ -52,6 +52,7 @@
   }
   #email_column, #social_column {
     width: 100%;
+    margin-bottom: 50px;
   }
 }
 
@@ -63,5 +64,6 @@
   }
   #email_column, #social_column {
     width: 100%;
+    margin-bottom: 50px;
   }
 }
