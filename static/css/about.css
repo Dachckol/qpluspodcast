@@ -3,6 +3,7 @@
 }
 #big_logo {
   float: left;
+  text-align: center;
 }
 #big_logo img {
   width: 100%;
@@ -18,7 +19,7 @@
   padding-left: 10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   #about {
     padding-left: 20%;
     padding-right: 20%;
@@ -30,11 +31,26 @@
     width: 60%;
   }
 }
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  #about {
+    flex-direction: column;
+  }
+  #big_logo, #about_text {
+    width: 100%;
+  }
+  #big_logo img {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #about {
     flex-direction: column;
   }
   #big_logo, #about_text {
     width: 100%;
+  }
+  #big_logo img {
+    width: 95%;
   }
 }
