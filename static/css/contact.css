@@ -1,69 +1,48 @@
 #contact {
   color: white;
+  background-color: #ee7dcc;
 }
-#contact div {
-  display: inline-block;
-}
-#email_column, #social_column {
-  float: left;
-}
-
-#social_column, #email_column {
-  text-align: center;
+#contact_label {
+  font-size: 80px;
+  width: 50%;
 }
 
-.social_button {
-  font-size: 75px;
-  margin-right: 20px;
+#right_column {
+  text-align: left;
 }
 
-#facebook a:hover{
-  color: #7a97d6;
+#right_column a {
+  color: white;
+  text-decoration: none;
 }
 
-
-#twitter a:hover{
-  color: #5ddfff;
+.podcast_site {
+  font-size: 30px;
+  margin: 10px;
 }
 
-
-#instagram a:hover{
-  color: #a144bf;
+.podcast_site i {
+  margin-right: 10px;
 }
 
+#right_column h1 {
+  font-size: 50px;
+}
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   #contact {
     padding-left: 20%;
     padding-right: 20%;
   }
-  #email_column {
-    width: 50%;
-  }
-  #social_column {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 950px) and (min-width: 600px) {
-  #contact {
-    flex-direction: column;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  #email_column, #social_column {
-    width: 100%;
-    margin-bottom: 50px;
-  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #contact {
-    flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
   }
-  #email_column, #social_column {
+  #contact_label {
+    font-size: 80px;
     width: 100%;
-    margin-bottom: 50px;
   }
 }

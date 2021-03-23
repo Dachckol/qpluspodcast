@@ -1,119 +1,72 @@
 header {
   position: fixed;
-  width: 100%;
   top: 0;
-  text-align: center;
-  background: black;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  width: 100%;
+  overflow: visible;
+  display: inline-block;
+  padding-top: 50px;
 }
 
 header a {
-  padding: 10px;
-  color: white;
-  font-weight: bold;
   text-decoration: none;
   transition-duration: 0.1s;
+  margin: 15px;
+  font-size: 18px;
+  color: #ee7ccb;
+}
+
+header .button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#nav_left {
+  padding-left: 80px;
+  float: left;
+}
+
+#nav_right {
+  padding-right: 80px;
+  float: right;
 }
 
 header .icon {
   display: none;
 }
 
-
-header a:nth-child(1) {
-  text-shadow: 1px 1px #ec4d57;
-}
-header a:nth-child(1):hover {
-  background-color: #ec4d57;
-  text-shadow: 2px 2px black;
-}
-
-
-header a:nth-child(2) {
-  text-shadow: 1px 1px #f5ac53;
-}
-header a:nth-child(2):hover {
-  background-color: #f5ac53;
-  text-shadow: 2px 2px black;
-}
-
-
-header a:nth-child(3) {
-  text-shadow: 1px 1px #fdf73c;
-}
-header a:nth-child(3):hover {
-  background-color: #fdf73c;
-  text-shadow: 2px 2px black;
-}
-
-
-header a:nth-child(4) {
-  text-shadow: 1px 1px #63cd3f;
-}
-header a:nth-child(4):hover {
-  background-color: #63cd3f;
-  text-shadow: 2px 2px black;
-}
-
-
-header a:nth-child(5) {
-  text-shadow: 1px 1px #3e4fb1;
-}
-header a:nth-child(5):hover {
-  background-color: #3e4fb1;
-  text-shadow: 2px 2px black;
-}
-
-
-header a:active {
-  text-shadow: none !important;
-}
-
-header a {
-  font-family: 'Bowlby One SC';
-  font-size: 22px;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   header {
-    top: 0;
-    text-align: left;
-    align-items: left;
-    justify-content: left;
-    flex-direction: row;
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+  }
+  #nav_left, #nav_right {
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+  }
+  #nav_left {
+    display: flex;
   }
   header a {
     display: none;
-    padding-left: 10px;
   }
   header a.icon {
     float: left;
-    display: inline-block;
-    width: 10%;
+    display: block;
+  }
+
+  header a, header a.button {
     text-align: center;
   }
-}
 
-@media screen and (max-width: 600px) {
   header.responsive {
+    background-color: #060b3e;
+    height: 100%;
     flex-direction: column;
     padding-bottom: 10px;
   }
-  header.responsive a.icon {
-    float: left;
-    display: inline-block;
-    width: 10%;
-    text-align: center;
-  }
   header.responsive a {
-    display: inline-block;
-    float: none;
-    text-align: left;
-    width: 90%;
-    padding-left: 10px;
+    display: block;
   }
 }

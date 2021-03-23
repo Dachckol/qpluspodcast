@@ -1,0 +1,12 @@
+#home {
+  background-color: #060b3e;
+  color: #ee7ccb;
+  text-align: center;
+  flex-direction: column;
+  height: 90%;
+}
+
+#home h1 {
+  font-size: 80px;
+  width: 100%;
+}

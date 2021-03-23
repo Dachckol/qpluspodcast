@@ -1,63 +1,51 @@
 html {
+  height: 100%;
+  margin: 0px;
   scroll-behavior: smooth;
 }
 
 body {
+  height: 100%;
   margin: 0px;
-  background: #ed7cca;
-  font-family: 'Alata';
+  font-family: 'Ropa Sans';
   color: black;
+  background-color: #060b3e;
 }
 
-a {
-  color: #551a8b;
+article {
+  height: 100%;
 }
-
-
-h1, h2 {
-  font-family: 'Bowlby One SC';
-}
-h2 {
-  font-size: 15px;
-}
-h1 {
-  font-size: 25px;
-  margin: 0;
-}
-p {
-  margin: 5px;
-}
-
 
 .section {
-  padding-bottom: 20%;
-  padding-top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  height: 100%;
   overflow: auto;
 }
 
-
-
-#home h1 {
-  text-shadow: 1px 1px #ec4d57;
-}
-#about h1 {
-  text-shadow: 1px 1px #fdf73c;
-}
-#episodes h1 {
-  text-shadow: 1px 1px #6b9cd3;
-}
-#contact h1 {
-  text-shadow: 1px 1px #3e4fb1;
-}
-
-
-@media screen and (min-width: 600px) {
-  article {
-    margin-top: 265px;
+@media screen and (min-width: 1100px) {
+  .section {
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }
-@media screen and (max-width: 600px) {
-  article {
-    margin-top: 365px;
+
+@media screen and (max-width: 1100px) {
+  .section {
+    padding-left: 50px;
+    padding-right: 50px;
   }
+}
+
+.button {
+  color: white;
+  background-color: #ee7dcc;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
