@@ -5,11 +5,11 @@ header {
   overflow: visible;
   display: inline-block;
   padding-top: 50px;
+  transition-duration: 0.3s;
 }
 
 header a {
   text-decoration: none;
-  transition-duration: 0.1s;
   margin: 15px;
   font-size: 18px;
   color: #ee7ccb;
@@ -34,7 +34,7 @@ header .icon {
   display: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   header {
     display: flex;
     padding-top: 10px;
@@ -43,17 +43,23 @@ header .icon {
   #nav_left, #nav_right {
     padding-left: 10px;
     padding-right: 10px;
-    float: left;
   }
   #nav_left {
     display: flex;
+    margin-left: auto;
+  }
+  #nav_right, #home_link {
+    display: none;
   }
   header a {
     display: none;
   }
   header a.icon {
-    float: left;
+    float: right;
     display: block;
+  }
+  header .fa-close {
+    display: none;
   }
 
   header a, header a.button {
@@ -61,12 +67,27 @@ header .icon {
   }
 
   header.responsive {
-    background-color: #060b3e;
+    background-color: #ee7ccb;
     height: 100%;
     flex-direction: column;
     padding-bottom: 10px;
   }
   header.responsive a {
     display: block;
+    color: #060b3e;
+  }
+  header.responsive #nav_right {
+    display: block;
+    font-weight: bold;
+  }
+  header.responsive .fa-bars {
+    display: none;
+  }
+  header.responsive .fa-close {
+    display: block;
+  }
+  header.responsive .button {
+    background-color: #060b3e;
+    color: #ee7ccb;
   }
 }
