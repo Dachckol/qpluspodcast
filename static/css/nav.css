@@ -14,10 +14,21 @@ header a {
   font-size: 18px;
   color: #ee7ccb;
 }
+header.invert a {
+  color: white;
+}
+header.invert a.button {
+  color: #ee7ccb;
+  background-color: white;
+}
 
 header .button {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+header #home_right_link {
+  display: none
 }
 
 #nav_left {
@@ -72,7 +83,7 @@ header .icon {
     flex-direction: column;
     padding-bottom: 10px;
   }
-  header.responsive a {
+  header.responsive a, header.responsive #home_right_link {
     display: block;
     color: #060b3e;
   }

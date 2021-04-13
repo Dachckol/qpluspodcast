@@ -1,5 +1,5 @@
 function menu_toggle() {
-  var x = document.getElementById("nav");
+  let x = document.getElementById("nav");
   if (x.className === "responsive") {
     x.className = "";
   } else {
@@ -9,6 +9,22 @@ function menu_toggle() {
 
 
 function close_menu() {
-  var x = document.getElementById("nav");
+  let x = document.getElementById("nav");
   x.className = "";
+}
+
+
+function scrolled() {
+  let home = document.getElementById("home");
+  let height = home.clientHeight;
+  let scrolled = window.scrollY;
+  let x = document.getElementById("nav");
+  if (x.className.includes("responsive")) return;
+  if (scrolled >= height - 50) {
+    if (!x.className.includes("invert")) {
+     x.className = "invert";
+    }
+  } else {
+     x.className = "";
+  }
 }

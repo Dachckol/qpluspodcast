@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="css/episodes.css">
     <link rel="stylesheet" href="css/contact.css">
   </head>
-  <body>
-
+  <body onscroll="scrolled()">
     <header id="nav">
       <div id="nav_left">
         <a href="#home" class="icon" onclick="menu_toggle()">
@@ -32,7 +31,7 @@
         </a>
       </div>
       <div id="nav_right">
-        <a href="#home" onclick="close_menu()">Home</a>
+        <a id="home_right_link" href="#home" onclick="close_menu()">Home</a>
         <a href="#about" onclick="close_menu()">About</a>
         <a href="#episodes" onclick="close_menu()">Episodes</a>
         <a href="#contact" onclick="close_menu()">Contact</a>
