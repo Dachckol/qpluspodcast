@@ -12,10 +12,6 @@ body {
   background-color: #060b3e;
 }
 
-article {
-  height: 100%;
-}
-
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +39,16 @@ article {
 .button {
   color: white;
   background-color: #ee7dcc;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.button_inverse {
+  color: #ee7ccb;
+  background-color: #060b3e;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 20px;
